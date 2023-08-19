@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>student management system</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <div>
+        <h2>Student Management CRUD</h2>
+    </div>
+
+    <form class="student" id="student-form">
+        <div class="student-info">
+            <input type="text" name="Name" placeholder="Name" required/>
+            <input type="text" name="Email" placeholder="Email" required />
+            <input type="text" name="GPA" placeholder="GPA" required/>
+            <input type="text" name="Age" placeholder="Age" required/>
+            <input type="text" name="Degree" placeholder="Degree" required/>
+        </div>
+
+        <div class="add-student" id="add-student">
+            <button type="submit">Add student</button>
+        </div>
+    </form>
+
+    <div class="search">
+        <input type="search" id="searchbar" name="search-value" placeholder="Search By Name, Email or Degree" />
+    </div>
+
+    <div class="show">
+        <table>
+            <colgroup>
+                <col style="width: 10%" />
+                <col style="width: 25%" />
+                <col style="width: 25%" />
+                <col style="width: 10%" />
+                <col style="width: 10%" />
+                <col style="width: 20%" />
+            </colgroup>
+            <tr>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>GPA</th>
+                <th>Degree</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
